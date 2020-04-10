@@ -7,5 +7,3 @@ describe("task 01 test running", () => {
     expect(ex1.first(ex1.second)).to.equal("Hello!!!");
   });
 });
-
-// console.log(ex1.first(ex1.second));
