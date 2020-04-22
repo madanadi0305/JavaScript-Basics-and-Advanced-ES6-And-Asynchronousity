@@ -635,7 +635,7 @@ Test35:
       - 35-task35-program-to-filter-elements-of-array-using-generator-function
 Practice35:
   script:
-      - node practice27.js
+      - node practice35.js
   only:
     refs:
       - 35-task35-program-to-filter-elements-of-array-using-generator-function
