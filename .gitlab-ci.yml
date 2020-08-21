@@ -1,709 +1,934 @@
 image: node:latest
 
 cache:
-   paths:
-       - node_modules/
+  paths:
+    - node_modules/
 
 Test:
-    script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test
-    only:
-        refs:
-            - master
-Test01:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test01
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test
+  only:
+    refs:
+      - master
+Test01:
+  timeout: 4m 30s
+  tags:
+    - async
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test01
   only:
     refs:
       - 1-task01-program-to-write-a-js-program-that-prints-hello-using-a-callback-function
 
 Practice01:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice01.js
+    - node practice01.js
   only:
     refs:
       - 1-task01-program-to-write-a-js-program-that-prints-hello-using-a-callback-function
 
 Test02:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test02
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test02
   only:
     refs:
       - 2-task02-program-to-write-a-js-program-that-returns-sum-according-to-the-user-need-through-a
 
 Practice02:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice02.js
+    - node practice02.js
   only:
     refs:
       - 2-task02-program-to-write-a-js-program-that-returns-sum-according-to-the-user-need-through-a
 
 Test03:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test03
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test03
   only:
     refs:
       - 3-task03-program-to-write-a-js-program-that-divides-two-numbers-using-a-callback
 
 Practice03:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice03.js
+    - node practice03.js
   only:
     refs:
       - 3-task03-program-to-write-a-js-program-that-divides-two-numbers-using-a-callback
 
 Test04:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test04
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test04
   only:
     refs:
       - 4-task04-program-to-write-a-js-program-that-returns-sum-or-difference-according-to-the-user-need
 
 Practice04:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice04.js
+    - node practice04.js
   only:
     refs:
       - 4-task04-program-to-write-a-js-program-that-returns-sum-or-difference-according-to-the-user-need
 
 Test05:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test05
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test05
   only:
     refs:
       - 5-task05-program-to-write-a-javascript-program-which-has-an-array-of-objects
 
 Practice05:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice05.js
+    - node practice05.js
   only:
     refs:
       - 5-task05-program-to-write-a-javascript-program-which-has-an-array-of-objects
 
-      
 Test06:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test06
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test06
   only:
     refs:
       - 6-task06-program-to-write-a-js-program-which-filters-array-through-a-callback-function
 
 Practice06:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice06.js
+    - node practice06.js
   only:
     refs:
       - 6-task06-program-to-write-a-js-program-which-filters-array-through-a-callback-function
 
-      
 Test07:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test07
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test07
   only:
     refs:
       - 7-task07-program-to-write-a-js-program-which-counts-fizz-and-buzz-elements-from-the-array
 
 Practice07:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice07.js
+    - node practice07.js
   only:
     refs:
       - 7-task07-program-to-write-a-js-program-which-counts-fizz-and-buzz-elements-from-the-array
 
-      
 Test08:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test08
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test08
   only:
     refs:
       - 8-task08-program-to-write-a-js-function-that-divides-the-number-with-its-double-and-return-the
 
 Practice08:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice08.js
+    - node practice08.js
   only:
     refs:
       - 8-task08-program-to-write-a-js-function-that-divides-the-number-with-its-double-and-return-the
 
-      
 Test09:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test09
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test09
   only:
     refs:
       - 9-task09-program-to-write-a-javascript-program-which-contains-a-string
 
 Practice09:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice09.js
+    - node practice09.js
   only:
     refs:
       - 9-task09-program-to-write-a-javascript-program-which-contains-a-string
 
 Test10:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test10
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test10
   only:
     refs:
       - 10-task10program-to-write-a-javascript-program-that-returns-yes-if-the-number-is-positive-else-no
 
 Practice10:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice10.js
+    - node practice10.js
   only:
     refs:
       - 10-task10program-to-write-a-javascript-program-that-returns-yes-if-the-number-is-positive-else-no
 
-      
 Test11:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test11
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test11
   only:
     refs:
       - 11-task11-program-to-write-a-javascript-program-that-returns-sum-through-promise
 
 Practice11:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice11.js
+    - node practice11.js
   only:
     refs:
       - 11-task11-program-to-write-a-javascript-program-that-returns-sum-through-promise
 
-      
 Test12:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test12
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test12
   only:
     refs:
       - 12-task12-program-to-write-a-javascript-program-that-tells-if-there-is-an-error-or-not-through
 
 Practice12:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice12.js
+    - node practice12.js
   only:
     refs:
       - 12-task12-program-to-write-a-javascript-program-that-tells-if-there-is-an-error-or-not-through
 
-      
 Test13:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test13
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test13
   only:
     refs:
       - 13-task13-program-to-write-a-javascript-program-that-returns-the-string-passed-converted-into
 
 Practice13:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice13.js
+    - node practice13.js
   only:
     refs:
       - 13-task13-program-to-write-a-javascript-program-that-returns-the-string-passed-converted-into
 
-      
 Test14:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test14
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test14
   only:
     refs:
       - 14-task14-program-to-write-a-javascript-program-that-inserts-elements-of-one-array-into-another
 
 Practice14:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice14.js
+    - node practice14.js
   only:
     refs:
       - 14-task14-program-to-write-a-javascript-program-that-inserts-elements-of-one-array-into-another
 
-
 Test15:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test15
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test15
   only:
     refs:
       - 15-task15-program-to-write-a-javascript-program-that-adds-elements-to-an-array-after-1000ms-delay
 
 Practice15:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice15.js
+    - node practice15.js
   only:
     refs:
       - 15-task15-program-to-write-a-javascript-program-that-adds-elements-to-an-array-after-1000ms-delay
 
-      
 Test16:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test16
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test16
   only:
     refs:
       - 16-task16-program-to-read-data-in-a-specified-file-and-returns-it
 
 Practice16:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice16.js
+    - node practice16.js
   only:
     refs:
       - 16-task16-program-to-read-data-in-a-specified-file-and-returns-it
 
-      
 Test17:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test17
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test17
   only:
     refs:
       - 17-task17-program-to-writes-and-reads-data-in-a-specified-file-and-returns-it
 
 Practice17:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice17.js
+    - node practice17.js
   only:
     refs:
       - 17-task17-program-to-writes-and-reads-data-in-a-specified-file-and-returns-it
 
-      
 Test18:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test18
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test18
   only:
     refs:
       - 18-task18-program-that-return-an-object-if-the-given-value-is-greater-than-0
 
 Practice18:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice18.js
+    - node practice18.js
   only:
     refs:
       - 18-task18-program-that-return-an-object-if-the-given-value-is-greater-than-0
-      
+
 Test19:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test19
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test19
   only:
     refs:
       - 19-task19-program-to-return-a-string-after-a-delay-of-1-second-using-the-async-await-function
+
 Practice19:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice19.js
+    - node practice19.js
   only:
     refs:
       - 19-task19-program-to-return-a-string-after-a-delay-of-1-second-using-the-async-await-function
 
 Test20:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test20
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test20
   only:
     refs:
       - 20-task20-program-to-return-a-string-using-the-async-await-function-which-contains-2-functions
 Practice20:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice20.js
+    - node practice20.js
   only:
     refs:
       - 20-task20-program-to-return-a-string-using-the-async-await-function-which-contains-2-functions
 
 Test21:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test21
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test21
   only:
     refs:
       - 21-task21-program-to-take-a-number-as-argument-and-returns-two-times-the-number
 Practice21:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice21.js
+    - node practice21.js
   only:
     refs:
       - 21-task21-program-to-take-a-number-as-argument-and-returns-two-times-the-number
 
-
 Test22:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test22
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test22
   only:
     refs:
       - 22-task22-program-for-array-operation-using-async-await
-Practice19:
+Practice22:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice22.js
+    - node practice22.js
   only:
     refs:
       - 22-task22-program-for-array-operation-using-async-await
 
 Test23:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test23
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test23
   only:
     refs:
       - 23-task23-program-to-read-from-a-file-and-return-its-content
 Practice23:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice23.js
+    - node practice23.js
   only:
     refs:
       - 23-task23-program-to-read-from-a-file-and-return-its-content
 
 Test24:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test24
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test24
   only:
     refs:
       - 24-task24-program-to-count-the-numbers-of-words-in-given-file
 Practice24:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice24.js
+    - node practice24.js
   only:
     refs:
       - 24-task24-program-to-count-the-numbers-of-words-in-given-file
 
 Test25:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test25
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test25
   only:
     refs:
       - 25-task25-program-to-write-content-in-file
 Practice25:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice25.js
+    - node practice25.js
   only:
     refs:
       - 25-task25-program-to-write-content-in-file
 
 Test26:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test26
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test26
   only:
     refs:
       - 26-task26-program-to-read-data-from-one-file-then-write-it-to-another
 Practice26:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice26.js
+    - node practice26.js
   only:
     refs:
       - 26-task26-program-to-read-data-from-one-file-then-write-it-to-another
 
 Test27:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test27
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test27
   only:
     refs:
       - 27-task27-program-to-print-two-messages-with-a-delay
 Practice27:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice27.js
+    - node practice27.js
   only:
     refs:
       - 27-task27-program-to-print-two-messages-with-a-delay
-      
+
 Test28:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test28
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test28
   only:
     refs:
       - 28-task28-program-to-print-two-messages-with-two-different-delay
 Practice28:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice28.js
+    - node practice28.js
   only:
     refs:
       - 28-task28-program-to-print-two-messages-with-two-different-delay
-      
+
 Test29:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test29
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test29
   only:
     refs:
       - 29-task29-program-to-write-a-function-to-illustrate-the-use-of-generator-function
 Practice29:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice29.js
+    - node practice29.js
   only:
     refs:
       - 29-task29-program-to-write-a-function-to-illustrate-the-use-of-generator-function
-      
+
 Test30:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test30
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test30
   only:
     refs:
       - 30-task30-program-which-iterate-to-yield-infinite-natural-numbers-one-by-one
 Practice30:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice30.js
+    - node practice30.js
   only:
     refs:
       - 30-task30-program-which-iterate-to-yield-infinite-natural-numbers-one-by-one
-      
+
 Test31:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test31
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test31
   only:
     refs:
       - 31-task31-program-to-create-a-counter-using-a-generator-function
 Practice31:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice31.js
+    - node practice31.js
   only:
     refs:
       - 31-task31-program-to-create-a-counter-using-a-generator-function
-      
+
 Test32:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test32
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test32
   only:
     refs:
       - 32-task32-program-to-create-a-generator-function-that-generates-even-number-series-of-infinite
 Practice32:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice32.js
+    - node practice32.js
   only:
     refs:
       - 32-task32-program-to-create-a-generator-function-that-generates-even-number-series-of-infinite
-      
+
 Test33:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test33
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test33
   only:
     refs:
       - 33-task33-program-to-create-a-generator-function-that-generates-an-odd-number-series-of-infinite
 Practice33:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice33.js
+    - node practice33.js
   only:
     refs:
       - 33-task33-program-to-create-a-generator-function-that-generates-an-odd-number-series-of-infinite
-      
+
 Test34:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test34
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test34
   only:
     refs:
       - 34-task34-program-to-create-a-generator-function-that-generates-the-fibonacci-series-of-infinite
 Practice34:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice34.js
+    - node practice34.js
   only:
     refs:
       - 34-task34-program-to-create-a-generator-function-that-generates-the-fibonacci-series-of-infinite
-      
+
 Test35:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test35
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test35
   only:
     refs:
       - 35-task35-program-to-filter-elements-of-array-using-generator-function
 Practice35:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice27.js
+    - node practice27.js
   only:
     refs:
       - 35-task35-program-to-filter-elements-of-array-using-generator-function
-      
+
 Test36:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test36
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test36
   only:
     refs:
       - 36-task36-program-to-filter-elements-of-array-using-generator-function
 Practice36:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice36.js
+    - node practice36.js
   only:
     refs:
       - 36-task36-program-to-filter-elements-of-array-using-generator-function
-      
+
 Test37:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test37
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test37
   only:
     refs:
       - 37-task37-program-to-filter-elements-of-array-using-generator-function
 Practice37:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice37.js
+    - node practice37.js
   only:
     refs:
       - 37-task37-program-to-filter-elements-of-array-using-generator-function
-      
+
 Test38:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test38
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test38
   only:
     refs:
       - 38-task38-program-to-generate-the-fibonacci-series-using-the-generator-function-and-then-filter
 Practice38:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice38.js
+    - node practice38.js
   only:
     refs:
       - 38-task38-program-to-generate-the-fibonacci-series-using-the-generator-function-and-then-filter
-      
+
 Test39:
+  timeout: 4m 30s
+  tags:
+    - async
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
-        - npm install
-        - npm run test39
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree pull --prefix=specs/ https://workspace.konfinity.com/swapnil/es6-and-asynchronicity-specs.git master -m "done"
+    - npm install
+    - npm run test39
   only:
     refs:
       - 39-task39-program-that-contains-a-generator-function-that-contains-an-iterator-to-fetch-an-infinite
 Practice39:
+  timeout: 4m 30s
+  tags:
+    - practice
   script:
-      - node practice39.js
+    - node practice39.js
   only:
     refs:
       - 39-task39-program-that-contains-a-generator-function-that-contains-an-iterator-to-fetch-an-infinite
