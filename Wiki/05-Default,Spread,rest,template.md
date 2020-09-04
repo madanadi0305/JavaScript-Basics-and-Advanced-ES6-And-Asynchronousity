@@ -153,26 +153,25 @@ In the above code, when template literals are not used, we need to add \n or \t 
 
  In line expressions can also be evaluated using the following syntax:
 
-```js
+
+```
 //without template literals
 var a = 5;
 var b = 10;
-console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
+console.log((a + b) + 'is fifteen' + ' while\n ' + (2 * a + b) + 'is twenty.');
 
 // Result
 
-//"Fifteen is 15 and
-// not 20."
+//"15 is fifteen while
+// 20 is twenty."
 
 //with template literals
 var a = 5;
 var b = 10;
-console.log(`Fifteen is ${a + b} and
-not ${2 ** a + b}.`);
+console.log(`${a + b} + 'is fifteen' + ' while\n ' + ${2 * a + b} + 'is twenty.'`);
 //Result
 
-// "Fifteen is 15 and
-// not 20.
-
+//"15 is fifteen while
+// 20 is twenty."
 ```
 If the above code is executed without template literals, we need to insert "+" either to join 2 strings or to evaluate the expressions like (a+b). But if we use template literals, the expressions become a part of the string enclosed within the back-ticks. Any expression can be evaluated inside the string using syntax`${expression}` (in this case `${a + b}` ) which calculates (a+b) and replace its value in the final string.
