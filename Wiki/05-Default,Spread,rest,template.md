@@ -154,7 +154,7 @@ In the above code, when template literals are not used, we need to add \n or \t 
  In line expressions can also be evaluated using the following syntax:
 
 
-```
+```js
 //without template literals
 var a = 5;
 var b = 10;
