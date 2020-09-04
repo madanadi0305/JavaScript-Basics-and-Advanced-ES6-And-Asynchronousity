@@ -157,7 +157,7 @@ In the above code, when template literals are not used, we need to add \n or \t 
 //without template literals
 var a = 5;
 var b = 10;
-console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 ** a + b) + '.');
+console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
 
 // Result
 
