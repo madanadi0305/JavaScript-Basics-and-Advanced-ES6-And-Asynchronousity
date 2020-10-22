@@ -10,7 +10,7 @@ for(var i=0;i<array.length;i++){
 return array;
 }
 
-function filter10(array){
+function filter5(array){
     for(var i=0;i<array.length;i++){
         if(array[i]===5){
         array.splice(i,1);
