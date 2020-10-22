@@ -22,7 +22,8 @@ function Vehicle(make, model, color) {
 
 ```
 
-The function above provides almost similar functionality as that of a Java class, in order to create an object of type Vehicle, we do following:
+The function above provides almost similar functionality as that of a Java class, in order to create an object of type Vehicle, 
+we do following:
 
 ```js
 let car = new Vehicle("Toyota", "Corolla", "Black");
