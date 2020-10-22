@@ -1,6 +1,4 @@
-function filter(array,callback){
-    return callback(array); 
-}
+
 function filter10(array){
 for(var i=0;i<array.length;i++){
     if(array[i]===10){
@@ -19,7 +17,9 @@ function filter5(array){
 return array;
 }
 
-
+function filter(array,callback){
+    return callback(array); 
+}
 
 module.exports = {
   ten: filter10,
