@@ -1,7 +1,7 @@
 function division(num1,num2,callback){
 if(num2!==0){
-    var answer=parseInt(num1/num2);
-    return callback("no error",answer);
+    //var answer=;
+    return callback("no error",parseInt(num1/num2));
     
 }
 
