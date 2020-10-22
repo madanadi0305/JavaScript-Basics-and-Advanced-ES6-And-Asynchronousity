@@ -18,7 +18,13 @@ return array;
 }
 
 function filter(array,callback){
-    return callback(array); 
+    var choice='five';
+    if(choice){
+    return callback(filter5(array));
+    }
+    else{
+        return callback(filter10(array));
+    } 
 }
 
 module.exports = {
