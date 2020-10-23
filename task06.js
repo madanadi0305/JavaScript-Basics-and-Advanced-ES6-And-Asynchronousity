@@ -1,25 +1,34 @@
 
 function filter10(array){
+ var tens_array=[];   
 for(var i=0;i<array.length;i++){
-    if(array[i]===10){
-        array.splice(i,1);
+    if(array[i]!==10){
+        tens_array.push(array[i]);
     }
 }
-return array;
+return tens_array;
 }
 
 function filter5(array){
+    var fives_array=[];
     for(var i=0;i<array.length;i++){
-        if(array[i]===5){
-        array.splice(i,1);
+        if(array[i]!==5){
+        fives_array.push(array[i]);
         }
     }
-return array;
+return fives_array;
 }
 
 function filter(array,callback){
-
- return callback(array);   
+ var choice='five';
+ if(choice){
+     
+     return callback(filter5(array)); 
+ }
+ else{
+     return callback(filter10(array));
+ }
+   
 }
 
 module.exports = {
