@@ -1,7 +1,7 @@
 function fizz(array){
     var count=0;
 for(var i=0;i<array.length;i++){
-    var elem=arr[i];
+    var elem=array[i];
     if(elem%3===0){
         count=count+1;
     }
