@@ -2,7 +2,7 @@
 function filter10(array){
 for(var i=0;i<array.length;i++){
     if(array[i]===10){
-        array.splice(i,1);
+        array.splice(i,1,5);
     }
 }
 return array;
