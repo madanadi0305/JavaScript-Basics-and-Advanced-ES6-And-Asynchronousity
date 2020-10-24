@@ -13,7 +13,7 @@ else{
 var s="Hello";
 hello.then((s)=>{
  console.log(s);   
-}).catch(()=>{console.log("Bye!")});
+});
 
 
 
