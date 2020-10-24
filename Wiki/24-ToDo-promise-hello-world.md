@@ -1,5 +1,8 @@
 # To-Do : Write a function to print "Hello World" through a function that returns a promise.
-The promise resolves if there is no error with the message "Hello world!" and rejects with the message "Error Occured!" if there is an error. Call the function and use .then() to print the returned value. Use .catch() to print the error message if there is an error. Try changing the value of err in the function to true to check what happens.
+The promise resolves if there is no error with the message "Hello world!" and rejects with the message "Error Occured!"
+ if there is an error. Call the function and use .then() to print the returned value. 
+ Use .catch() to print the error message if there is an error. 
+ Try changing the value of err in the function to true to check what happens.
 
 Hint:
 
