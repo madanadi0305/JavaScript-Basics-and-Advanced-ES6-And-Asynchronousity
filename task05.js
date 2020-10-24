@@ -16,4 +16,9 @@ console.log(posts[i]);
 }
 
 setTimeout(getPost,1000);
+module.exports = {
+  posts: posts,
+  createPost: createPost,
+  getPost: getPost
+};
 
