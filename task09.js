@@ -13,6 +13,7 @@ else{
 var s="Hello";
 hello.then((s)=>{
  console.log(s);   
+ return hello;
 });
 
 
