@@ -1,9 +1,10 @@
 const posts = [{ title: 'Post one' , body:'This is post one' }];
 
 function createPost(post){
+setTimeout(createPost,2000);
 posts.push(post);
 }
-setTimeout(createPost,2000);
+
 
 
 
