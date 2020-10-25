@@ -11,9 +11,12 @@ else{
 
 };
 var s="Hello";
-hello.then((s)=>{
- console.log(s);   
- return hello;
+hello(s).then(result=>{
+ console.log(result);   
+ 
+}).catch(err=>{
+
+    console.log(err);
 });
 
 
