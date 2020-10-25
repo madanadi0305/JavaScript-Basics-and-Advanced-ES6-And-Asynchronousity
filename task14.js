@@ -1,15 +1,15 @@
-var ar1=[1,2,3,4];
-var ar2=[0];
-let arrpush=(ar1,ar2)=>{
+//var ar1=[1,2,3,4];
+//var ar2=[0];
+let arrpush=(arr1,arr2)=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
-if(ar2.length>1){
-    for(var i=0;i<ar1.length;i++){
-    ar2.push(ar1[i]);
+if(arr2.length>1){
+    for(var i=0;i<arr1.length;i++){
+    arr2.push(arr1[i]);
 
     }
     
-    resolve(ar2);
+    resolve(arr2);
 }
 else{
     reject("Error!");
@@ -19,7 +19,7 @@ else{
 });
 
 };
-
+arrpush(ar1,ar2).then(result=>{console.log(result);}).catch(result=>{console.log(result);});
 
 
 
