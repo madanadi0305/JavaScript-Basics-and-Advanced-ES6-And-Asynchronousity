@@ -1,13 +1,13 @@
-let arrpush=(arr1,arr2)=>{
+let arrpush=(ar1,ar2)=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
-if(arr2.length>1){
-    for(var i=0;i<arr1.length;i++){
-    arr2.push(arr1[i]);
+if(ar2.length>1){
+    for(var i=0;i<ar1.length;i++){
+    ar2.push(ar1[i]);
 
     }
     
-    resolve(arr2);
+    resolve(ar2);
 }
 else{
     reject("Error!");
@@ -22,7 +22,7 @@ else{
 
 
 module.exports = {
-  ar1: arr1,
-  ar2: arr2,
+  ar1: ar1,
+  ar2: ar2,
   arrpush: arrpush
 };
