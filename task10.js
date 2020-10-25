@@ -14,7 +14,7 @@ else{
 };
 //var m=1;
 bina.then(result=>{
- console.log("YES");   
+ console.log(result);   
 })
 
 
