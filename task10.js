@@ -12,8 +12,8 @@ else{
 
 
 };
-var m=1;
-bina.then(m=>{
+//var m=1;
+bina.then(result=>{
  console.log("YES");   
 })
 
