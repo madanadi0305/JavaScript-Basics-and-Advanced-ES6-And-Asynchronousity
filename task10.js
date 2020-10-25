@@ -12,8 +12,8 @@ else{
 
 
 };
-//var m=1;
-bina.then(result=>{
+var m=1;
+bina(m).then(result=>{
  console.log(result);   
 }).catch(err=>{
     console.log(err);
