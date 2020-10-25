@@ -1,6 +1,6 @@
 var fs=require('fs');
 
-let readFile=(fname)=>{
+function readFile(fname){
 return new Promise((resolve,reject)=>{
 fs.readFile((err,data)=>{
 if(err===false){
@@ -19,7 +19,7 @@ else{
 
 }
 
-let writeFile=(fname,s)=>{
+function writeFile(fname,s){
 return new Promise((resolve,reject)=>{
 fs.writeFile(fname,s,(err)=>{
 if(err===false){
