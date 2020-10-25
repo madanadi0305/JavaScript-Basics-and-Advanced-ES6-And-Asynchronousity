@@ -16,7 +16,7 @@ reject("Error: Something went wrong");
 
 };
 
-let getPosts=()=>{
+let getPost=()=>{
 
 for(var i=0;i<posts.length;i++){
     console.log(posts[i]);
