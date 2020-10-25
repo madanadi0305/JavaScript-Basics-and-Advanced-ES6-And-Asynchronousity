@@ -18,7 +18,7 @@ else{
 
 
 module.exports = {
-  ar1: ar1,
-  ar2: ar2,
+  ar1: arr1,
+  ar2: arr2,
   arrpush: arrpush
 };
