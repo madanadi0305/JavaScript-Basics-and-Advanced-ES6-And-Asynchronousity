@@ -1,3 +1,5 @@
+var ar1=[1,2,3,4];
+var ar2=[0];
 let arrpush=(ar1,ar2)=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
