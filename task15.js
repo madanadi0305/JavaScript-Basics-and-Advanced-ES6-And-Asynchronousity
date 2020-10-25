@@ -1,4 +1,4 @@
-var posts={ title: 'Post one' , body:'This is post one' }
+var posts=[{ title: 'Post one' , body:'This is post one' }];
 
 let createPost=(post)=>{
 return new Promise((resolve,reject)=>{
