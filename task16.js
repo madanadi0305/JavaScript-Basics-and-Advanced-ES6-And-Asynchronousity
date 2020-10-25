@@ -17,7 +17,12 @@ function readFile(path){
     });
 }
 
-readFile("helper.txt");
+readFile("helper.txt").then((result)=>{
+console.log(result);
+
+}).catch(result=>{
+    console.log(result);
+});
 
 module.exports = {
   readFile: readFile
