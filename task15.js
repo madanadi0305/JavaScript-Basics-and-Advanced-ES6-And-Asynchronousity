@@ -22,7 +22,7 @@ for(var i=0;i<posts.length;i++){
     console.log(posts[i]);
 }
 };
-setTimeout(getPosts,500);
+setTimeout(getPost,500);
 
 module.exports = {
   posts: posts,
