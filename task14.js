@@ -1,9 +1,9 @@
-let arrpush=(ar1,ar2)=>{
+let arrpush=(arr1,arr2)=>{
 return new Promise((resolve,reject)=>{
 setTimeout(()=>{
-if(ar2.length>1){
-    ar2.push(ar1);
-    resolve(ar2);
+if(arr2.length>1){
+    arr2.push(arr1);
+    resolve(arr2);
 }
 else{
     reject("Error!");
