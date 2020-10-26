@@ -1,7 +1,7 @@
 function f1(str){
 return new Promise((resolve)=>{
 setTimeout(()=>{
-resolve(str.toString());
+resolve(str);
 
 
 },1000);
