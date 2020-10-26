@@ -1,6 +1,7 @@
 # Async and Await
 
-Async function provides us with a clean and concise syntax that enables us to write less code to accomplish the same outcome we would get with promises. Async is nothing more than writing promises in a different way.
+Async function provides us with a clean and concise syntax that enables us to write less code to accomplish
+ the same outcome we would get with promises. Async is nothing more than writing promises in a different way.
 
 Async functions are created by writing a word `async` before the function declaration like this:
 
@@ -8,14 +9,21 @@ Async functions are created by writing a word `async` before the function declar
 const asyncFunction = async () => {  
   // Code}
 ```
-Asynchronous functions always return a `promise`. Another keyword can be used in Asynchronous functions which is `await`. When you _await_ a promise, the function is **paused** in a non-blocking way until the promise settles i.e. either it gets resolved or rejected. If the promise fulfills, you get the value back. If the promise rejects, the rejected value is thrown.
+Asynchronous functions always return a `promise`. 
+Another keyword can be used in Asynchronous functions which is `await`.
+ When you _await_ a promise, the function is **paused** in a non-blocking way until the promise settles
+i.e. either it gets resolved or rejected. If the promise fulfills, you get the value back. 
+If the promise rejects, the rejected value is thrown.
 
 Await returns whatever the value that the promise returns when it is settled.
 
 ## async
-- Async functions enable us to write promise-based code as if it were synchronous, but without blocking the execution thread.
+- Async functions enable us to write promise-based code as if it were synchronous,
+ but without blocking the execution thread.
 - It operates asynchronously via the event-loop.
-- Async functions will always return a value. If the function throws an error, the Promise will be rejected. If the function returns a value, the Promise will be resolved.
+- Async functions will always return a value. 
+If the function throws an error, the Promise will be rejected.
+ If the function returns a value, the Promise will be resolved.
 
 ```js
 async function firstAsync() {
@@ -28,7 +36,10 @@ Running the above code gives the alert output as 27, using `.then` function over
 
 ## await
 
-The await operator is used to wait for a Promise to get resolved or rejected. It can be used inside an Async block only. The keyword Await makes JavaScript wait until the promise returns a result. It has to be noted that it only makes the `async` function block wait and not the whole program execution.
+The await operator is used to wait for a Promise to get resolved or rejected.
+ It can be used inside an Async block only.
+The keyword Await makes JavaScript wait until the promise returns a result. 
+It has to be noted that it only makes the `async` function block wait and not the whole program execution.
 
 The code block below shows the use of Async Await together.
 
@@ -86,7 +97,8 @@ async function sequence() {
     return "done!";
 }
 ```
-The `promise.all()` function resolves when all the promises inside the iterable have been resolved and then returns the result.
+The `promise.all()` function resolves when all the promises inside the iterable have been resolved 
+and then returns the result.
 
 ## Solution to callback hell: Use asynchronous functions
 
