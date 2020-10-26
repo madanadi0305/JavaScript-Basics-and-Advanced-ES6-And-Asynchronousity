@@ -1,18 +1,20 @@
 var obj={};
 async function loadData(value){
-var promise1= new Promise((resolve,reject)=>{
+
 if(value.length>0){
    obj.data=value;
-   resolve(obj);  
+   return obj;  
 }
 else{
-    reject("Value must be greater than 0");
+//    reject("Value must be greater than 0");
+    throw new Error("Value must be greater than 0");
     
 }
-});
+
 
 
 }
+
 loadData(value).then(res=>{
 console.log(res);    
 }).catch(error=>{console.log(error.message)});
