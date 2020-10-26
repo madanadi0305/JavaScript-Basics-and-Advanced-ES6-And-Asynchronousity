@@ -1,7 +1,7 @@
 function f1(str){
 return new Promise((resolve)=>{
 setTimeout(()=>{
-resolve(str);
+resolve(str.toString());
 
 
 },1000);
@@ -16,10 +16,12 @@ const a1=await f1(str);
 return a1;
 }
 
-waitForString('done').then(res=>{console.log(res)});
+waitForString('done!').then(res=>{console.log(res)});
 
 
 
 module.exports = {
-  func: f1
+  func: f1,
+  
+
 };
