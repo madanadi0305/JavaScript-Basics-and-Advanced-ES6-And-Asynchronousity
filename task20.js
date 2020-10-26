@@ -1,6 +1,13 @@
 function func1(str1){
-setTimeout(func1,5000);
-return str1;
+return new Promise((res)=>{
+
+setTimeout(()=>{
+res(str1);
+
+},5000);
+
+});
+
 }
 
 async function func2(str2){
