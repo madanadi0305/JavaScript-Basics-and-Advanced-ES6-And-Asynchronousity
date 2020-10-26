@@ -8,7 +8,7 @@ if(err===false){
 }
 
 else{
-    reject(err);
+    reject("No file found");
 }
 
 });
