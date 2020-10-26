@@ -11,7 +11,7 @@ resolve(str);
 
 }
 
-async function waitForString(str){
+async function waitForString(){
 const a1=await f1(str);
 return a1;
 }
