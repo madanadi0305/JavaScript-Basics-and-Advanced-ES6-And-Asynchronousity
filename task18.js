@@ -1,7 +1,7 @@
-var obj={};
-async function loadData(value){
 
-if(value.length>0){
+async function loadData(value){
+var obj={};
+if(value>0){
    obj.data=value;
    return obj;  
 }
@@ -15,7 +15,7 @@ else{
 
 }
 
-loadData(value).then(res=>{
+loadData(4).then(res=>{
 console.log(res);    
 }).catch(error=>{console.log(error.message)});
 
