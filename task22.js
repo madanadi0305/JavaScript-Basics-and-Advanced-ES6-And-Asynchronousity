@@ -2,8 +2,8 @@ var arr1=[];
 function insertCharacter(char){
 return new Promise(res=>{
 setTimeout(()=>{
-
-res(arr1.push(char));
+arr1.push(char);
+res(arr1);
 
 }
 ,1000);
