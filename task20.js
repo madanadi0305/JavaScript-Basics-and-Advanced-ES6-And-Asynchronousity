@@ -23,7 +23,7 @@ var str2=func2(s2);
 return str1+str2;
 }
 
-
+concatenated("Hello! "," World!").then(res=>{console.log(res);}).catch(res=>{console.log(res);});
 
 module.exports = {
   concatenated: concatenated
