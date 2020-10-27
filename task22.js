@@ -14,14 +14,11 @@ res(arr1);
 }
 
 async function adding(array){
-return new Promise(res=>{
 for(var i=0;i<array.length;i++){
     var elem=array[i];
-    setTimeout(function(){},1000);
-    arr1.push(elem);
+    var res=await insertCharacter(elem);
+    
 }
-    res(arr1);
-});
 
 }
 
