@@ -1,8 +1,10 @@
 function doubleValue(x){
-
-setTimeout(()=>{
-    return x*2;
+return new Promise((resolve)=>{
+    setTimeout(()=>{
+    resolve (parseInt(x*2));
 },2000);
+});
+
 
 }
 
