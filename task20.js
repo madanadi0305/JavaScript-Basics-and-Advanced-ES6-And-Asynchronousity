@@ -1,30 +1,24 @@
 function func1(str1){
-return new Promise((res)=>{
-
+    return new Promise((res)=>{
 setTimeout(()=>{
-res(str1);
+res(str1.toString());
+
 
 },5000);
 
-});
-
+    });
 }
 
 async function func2(str2){
-
-var str21=await func1(str2);
-return str21;
+var str22=await func1(str2);
+return str22.toString();
 }
 
 function concatenated(s1,s2){
-var str1=func1(s1);
-var str2=func2(s2);
+return func1(s1)+func2(s2);
 
-return str1+str2;
 }
 
-concatenated("Hello! "," World!").then(res=>{console.log(res);}).catch(res=>{console.log(res);});
-
-module.exports = {
-  concatenated: concatenated
-};
+module.exports={
+    concatenated:concatenated
+}
