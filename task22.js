@@ -17,8 +17,8 @@ return new Promise(res=>{
  
 for(var i=0;i<array.length;i++){
     var elem=array[i];
-    //setTimeout(()=>{},1000);
-    insertCharacter(elem);
+    setTimeout(()=>{insertCharacter(elem);},1000);
+    
 }
 res(array);
 
