@@ -3,7 +3,7 @@ function insertCharacter(char){
 return new Promise(res=>{
 setTimeout(()=>{
 
-arr1.push(char);
+res(arr1.push(char));
 
 }
 ,1000);
