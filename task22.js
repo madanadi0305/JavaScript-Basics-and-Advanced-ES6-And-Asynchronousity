@@ -1,36 +1,32 @@
 var arr1=[];
-function insertCharacter(char){
+function insertCharacter(ch){
 return new Promise(res=>{
+
 setTimeout(()=>{
-arr1.push(char);
+
+
+},1000);
+arr1.push(ch);
 res(arr1);
-
-}
-,1000);
-
 });
 
 
 }
-function adding(array){
+
+async function adding(array){
 return new Promise(res=>{
- 
 for(var i=0;i<array.length;i++){
     var elem=array[i];
-    setTimeout(()=>{insertCharacter(elem);
-   
-    
-    },1000);
-    res(array); 
+    setTimeout(function(){},1000);
+    arr1.push(elem);
+}
+    res(arr1);
+});
+
 }
 
 
-});    
 
-
-}
-
-//adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
 module.exports = {
   push: adding
 };
