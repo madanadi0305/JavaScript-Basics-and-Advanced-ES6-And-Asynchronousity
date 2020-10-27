@@ -18,10 +18,10 @@ return new Promise(res=>{
 for(var i=0;i<array.length;i++){
     var elem=array[i];
     setTimeout(()=>{insertCharacter(elem);
-    res(arr1);
+   
     
     },1000);
-    
+    res(arr1); 
 }
 
 
