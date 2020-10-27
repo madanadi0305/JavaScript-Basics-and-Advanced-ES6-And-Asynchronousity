@@ -13,10 +13,14 @@ res(arr1);
 
 }
 function adding(array){
+return new Promise(res=>{
 for(var i=0;i<array.length;i++){
     var elem=array[i];
     insertCharacter(elem);
 }
+res(array);
+});    
+
 
 }
 
