@@ -19,14 +19,15 @@ for(var i=0;i<array.length;i++){
     var elem=array[i];
     insertCharacter(elem);
 }
-},1000);
 res(array);
+},1000);
+
 });    
 
 
 }
 
-adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
+//adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
 module.exports = {
   push: adding
 };
