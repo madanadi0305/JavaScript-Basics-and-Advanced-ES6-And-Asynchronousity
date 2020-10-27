@@ -26,7 +26,7 @@ res(array);
 
 }
 
-//adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
+adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
 module.exports = {
   push: adding
 };
