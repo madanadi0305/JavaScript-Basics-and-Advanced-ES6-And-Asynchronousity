@@ -14,13 +14,13 @@ res(arr1);
 }
 function adding(array){
 return new Promise(res=>{
- setTimeout(()=>{   
+ 
 for(var i=0;i<array.length;i++){
     var elem=array[i];
+    //setTimeout(()=>{},1000);
     insertCharacter(elem);
 }
 res(array);
-},1000);
 
 });    
 
