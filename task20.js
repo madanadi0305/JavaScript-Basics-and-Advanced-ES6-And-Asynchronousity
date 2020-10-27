@@ -11,13 +11,15 @@ res(str1);
 }
 
 async function func2(str2){
-return str2;
 
+var str21=await func1(str2);
+return str21;
 }
 
 function concatenated(s1,s2){
 var str1=func1(s1);
 var str2=func2(s2);
+
 return str1+str2;
 }
 
