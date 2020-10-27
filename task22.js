@@ -21,7 +21,7 @@ for(var i=0;i<array.length;i++){
    
     
     },1000);
-    res(arr1); 
+    res(array); 
 }
 
 
