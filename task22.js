@@ -15,7 +15,7 @@ arr1.push(char);
 function adding(array){
 for(var i=0;i<array.length;i++){
     var elem=array[i];
-    arr1.push(elem);
+    insertCharacter(elem);
 }
 
 }
