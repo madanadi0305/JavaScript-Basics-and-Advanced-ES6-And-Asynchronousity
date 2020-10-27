@@ -20,7 +20,7 @@ for(var i=0;i<array.length;i++){
 
 }
 
-
+adding([1,2,3,4,5]).then(res=>{console.log(res);}).catch(res=>{console.log(res);});
 module.exports = {
   push: adding
 };
