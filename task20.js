@@ -17,7 +17,7 @@ return str2;
 
 function concatenated(s1,s2){
 var str1=await func1(s1);
-var str2=await func2(str2);
+var str2=func2(str2);
 return str1+str2;
 }
 
