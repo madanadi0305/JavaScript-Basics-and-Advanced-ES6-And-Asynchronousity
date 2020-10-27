@@ -25,6 +25,7 @@ var readContent=await readFile(pathToFile);
 return readContent;
 }
 
+display("./task23.js").then(res=>{console.log(res);});
 
 
 
