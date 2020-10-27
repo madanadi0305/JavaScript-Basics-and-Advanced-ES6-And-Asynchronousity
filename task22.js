@@ -19,7 +19,7 @@ for(var i=0;i<array.length;i++){
     var res=await insertCharacter(elem);
     
 }
-
+return arr1;
 }
 
 
