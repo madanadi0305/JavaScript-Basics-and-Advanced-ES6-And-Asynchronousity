@@ -14,7 +14,7 @@ else{
 
 }
 
-async function count(){
+async function count(path){
  var counts={};   
  var dataContents=await readFile(path);
  var wordsArray=dataContents.split(" ");
