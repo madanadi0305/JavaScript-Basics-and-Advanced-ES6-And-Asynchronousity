@@ -4,10 +4,10 @@ return new Promise(res=>{
 
 setTimeout(()=>{
 
+res(arr1.push(ch));
 
 },1000);
-arr1.push(ch);
-res(arr1);
+
 });
 
 
