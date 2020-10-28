@@ -27,7 +27,7 @@ var resultSlow=await resolveAfter2Second();
 
 promises.push(resultSlow);
 promises.push(resultFast);
-return Promises.all(promises);
+return Promise.all(promises).then(res=>{console.log(res);});
 }
 
 
