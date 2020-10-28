@@ -17,8 +17,8 @@ else{
 
 };
 
-var ar1=[1,2,3,4];
-var ar2=[0];
+//var ar1=[1,2,3,4];
+//var ar2=[0];
 arrpush(ar1,ar2).then((result)=>{console.log(result);}).catch((err)=>{console.log(err);});
 
 
