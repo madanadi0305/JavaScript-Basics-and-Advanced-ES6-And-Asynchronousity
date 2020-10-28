@@ -15,20 +15,12 @@ else{
 }
 
 async function count(path){
- var counts={};   
+ var counts=0;   
  var dataContents=await readFile(path);
  var wordsArray=dataContents.split(" ");
  for(var i=0;i<wordsArray.length;i++){
-  var word=wordsArray[i];
-  if(!counts[word]){
-      counts[word]=1;
-
-  }
-
-  else{
-      counts[word]=counts[word]+1;
-  }
-
+  //var word=wordsArray[i];
+  counts++;
  }
  return counts;   
 } 
