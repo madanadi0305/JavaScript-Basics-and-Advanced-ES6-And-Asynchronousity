@@ -28,3 +28,6 @@ obj.slow=slowResult;
 obj.fast=fastResult;
 return obj;
 }
+
+module.exports=sequentialStart;
+
