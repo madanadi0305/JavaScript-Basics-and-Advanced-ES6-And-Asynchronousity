@@ -14,14 +14,13 @@ async function func2(str2){
 return str2.toString();
 }
 
-function concatenated(s1,s2){
-return new Promise((resolve)=>{
-var str_final=func1(s1)+func2(s2);
-resolve(str_final);
+async function concatenated(s1,s2){
+var str1=await func1(s1);
+var str2=await func2(s2);
 
-});
 
-//return func1(s1)+func2(s2);
+
+return str1+str2;
 
 }
 
