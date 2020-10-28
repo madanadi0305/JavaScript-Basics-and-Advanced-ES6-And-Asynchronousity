@@ -19,8 +19,9 @@ await timeout(2000);
 
 
 }
-var obj={};
+
 async function sequentialStart(){
+var obj={};
 var slowResult=await resolveAfter2Second();
 var fastResult=await resolveAfter1Second();
 obj.slow=slowResult;
