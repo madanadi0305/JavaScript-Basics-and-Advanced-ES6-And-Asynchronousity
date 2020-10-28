@@ -30,7 +30,7 @@ async function count(path){
   }
 
  }
- return count;   
+ return counts;   
 } 
 
 count('./task24.js').then(res=>{console.log(res);}).catch(err=>{console.log(err);});
