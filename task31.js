@@ -1,8 +1,9 @@
 function * reverseCount(number){
 var n=parseInt(number);
-while(n>=0){
-    yield n;
-    n=n-1;
+var k=n-1;
+while(k>=0){
+    yield k;
+    k=k-1;
 }
 
 }
