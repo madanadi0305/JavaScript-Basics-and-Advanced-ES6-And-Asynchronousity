@@ -37,8 +37,8 @@ else{
 }
 
 async function copy(){
-var readContent=await readFile('file1.txt');
-var writeContent=await writeFile('file2.txt',readContent);
+var readContent=await readFile('./file1.txt');
+var writeContent=await writeFile('./file2.txt',readContent);
 return 'file created';
 
 }
