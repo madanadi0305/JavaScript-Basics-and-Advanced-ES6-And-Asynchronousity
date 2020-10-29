@@ -1,6 +1,7 @@
 # Generators
 
-You must be familiar with functions by now. Once a function starts executing, it runs until it completes, and no other code can interrupt and run in between.
+You must be familiar with functions by now. 
+Once a function starts executing, it runs until it completes, and no other code can interrupt and run in between.
 
 For example:
 
@@ -48,13 +49,17 @@ console.log(generatorObject.next().value); //Line 6
 ```
 Before going into syntax, we must know what the code is actually doing:
 
-The `generatorFunction()` is a generator function which can pause the program. The keyword `yield` is responsible for _pausing_ the program in between. 
+The `generatorFunction()` is a generator function which can pause the program. 
+The keyword `yield` is responsible for _pausing_ the program in between. 
 
-- In the above code, _Line2_ contains the keyword `yield` which pauses the further execution until the generators `next()` function is called.
+- In the above code, _Line2_ contains the keyword `yield` which pauses the further execution until the generators `next()` 
+function is called.
 
-- Once a generator function is paused by the `yield` statement, it returns the _value_ specified after it. In the above code, it returns "Hello" and "World".
+- Once a generator function is paused by the `yield` statement, it returns the _value_ specified after it.
+ In the above code, it returns "Hello" and "World".
 
-- In _Line3_, an _iterator_ object `generatorObject` of the generator is constructed. But the generator function is yet not executed. Only the iterator is initiated which will be used afterward to call `next()` function.
+- In _Line3_, an _iterator_ object `generatorObject` of the generator is constructed.
+ But the generator function is yet not executed. Only the iterator is initiated which will be used afterward to call `next()` function.
 
 - The `yield` statement returns an object of the format:
 ```js
@@ -65,8 +70,10 @@ The `generatorFunction()` is a generator function which can pause the program. T
 ```
 - The value property contains the _value_ which the `yield` has to return and if we want to print that value, we need to write `console.log(generatorObject.next().value)`. The other property is the _done_ property which has a boolean value `true or false` depending on whether there is further more `yield` statements or not. If the value of _done_ is _"false"_, it shows that the iterator is yet not finished but if the value is _"true"_, this shows that iterator has been ended.
 
-- In _Line4_, we print the value of the object returned by the `yield` statement by using `.next()` function on the iterator object.
-It executes the code till the first `yield` statement is executed. Once it prints, the program gets paused waiting for another `.next()` statement.
+- In _Line4_, we print the value of the object returned by the `yield` statement by using `.next()` function on
+ the iterator object.
+It executes the code till the first `yield` statement is executed. Once it prints,
+ the program gets paused waiting for another `.next()` statement.
 
 - In _Line5_, we call the `.next()` which resumes the execution from where it left in the previous step.
 
@@ -133,4 +140,6 @@ Let's understand the code step by step.
 **Note:**
 
 - There's a mismatch between the `yield` and the `next(..)` call. In general, you're going to have **one** more `next(..)` call than you have yield statements.
-This is because the first `next(..)` always **starts** a generator, and runs to the first `yield`. But it's the second `next(..)` call that fulfills the first paused `yield` expression, and the third `next(..)` would fulfill the second `yield`, and so on.
+This is because the first `next(..)` always **starts** a generator, and runs to the first `yield`.
+ But it's the second `next(..)` call that fulfills the first paused `yield` expression,
+ and the third `next(..)` would fulfill the second `yield`, and so on.
