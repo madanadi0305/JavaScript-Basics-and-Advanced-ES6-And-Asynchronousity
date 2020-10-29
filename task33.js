@@ -12,7 +12,9 @@ for(var odd of generateOddSeries(25)){
     console.log(odd);
 }
 
-
+for(var odd of generateOddSeries(50)){
+    console.log(odd);
+}
 
 
 
