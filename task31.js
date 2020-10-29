@@ -1,6 +1,6 @@
 function * reverseCount(number){
 var n=parseInt(number);
-while(n>0){
+while(n>=0){
     yield n;
     n=n-1;
 }
