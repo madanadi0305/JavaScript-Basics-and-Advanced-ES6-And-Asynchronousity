@@ -1,6 +1,6 @@
 function * generateOddSeries(number){
 var n=parseInt(number);
-for(var i=0;i<n;i++){
+for(var i=1;i<=(n-1);i++){
     if(i%2!==0){
         yield i;
     }
