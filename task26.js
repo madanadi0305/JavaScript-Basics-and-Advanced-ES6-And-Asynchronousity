@@ -25,7 +25,7 @@ if(err){
 
 else{
 
-    res(writeData);
+    res('file created');
 }
 
 });
@@ -39,9 +39,22 @@ else{
 async function copy(){
 var readContent=await readFile('./file1.txt');
 var writeContent=await writeFile('./file2.txt',readContent);
-return 'file created';
-
+/*return new Promise((res,rej)=>{
+var err=false;
+if(err===true){
+    res('file created');
 }
 
+else{
+rej(err.message);
+
+}
+})*/;
+
+return writeContent;
+}
+module.exports = {
+  content: copy
+};
 
 
