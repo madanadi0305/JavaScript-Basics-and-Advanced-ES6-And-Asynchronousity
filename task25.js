@@ -2,16 +2,20 @@ var fs=require('fs');
 
 async function create(insertData){
 //var err=new Error();
+return new Promise((resolve,reject)=>{
 fs.writeFile("file1.txt",insertData,(err)=>{
 if(err===true){
-console.log(err.message);
+reject(err.message);
 
 }
 else{
-    console.log("file created");
+    resolve("file created");
 }
 
 });
+
+});
+
 
 
 }
