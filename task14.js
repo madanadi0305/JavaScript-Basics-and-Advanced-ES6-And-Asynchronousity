@@ -1,34 +1,28 @@
-let arrpush=(arr1,arr2)=>{
-return new Promise((resolve,reject)=>{
+async function arrpush(arr1,arr2){
+return new Promise((res,rej)=>{
 setTimeout(()=>{
-if(arr2.length>1){
-    resolve(arr2.push(arr1));
-    //resolve(arr2);
+if(ar2.length>1){
+    res(ar2.push(ar1));
 }
 else{
-    reject("Error!");
+    rej("Error!");
 }
 
-},1000);
 
+
+},1000);
 
 });
 
 
-};
-
-//var ar1=[1,2,3,4];
-//var ar2=[0];
-//arrpush(ar1,ar2).then((result)=>{console.log(result);}).catch((err)=>{console.log(err);});
-
-async function print(array1,array2){
-    
-    var array=await arrpush(array1,array2);
-    return array;
 }
 
+arrpush.then([1,2,3,4],[0]).then(res=>{console.log(res);})
+.catch(res=>{console.log(res);});
+
+
 module.exports={
-arr1:ar1,
-arr2:ar2,
+ar1:ar1,
+ar2:ar2,
 arrpush:arrpush
-};
+}
