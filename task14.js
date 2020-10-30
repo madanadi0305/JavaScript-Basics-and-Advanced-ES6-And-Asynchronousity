@@ -1,4 +1,4 @@
-async function arrpush(arr1,arr2){
+function elementpush(arr1,arr2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
 if(ar2.length>1){
@@ -17,8 +17,13 @@ else{
 
 }
 
-arrpush.then([1,2,3,4],[0]).then(res=>{console.log(res);})
-.catch(res=>{console.log(res);});
+async function arrpush(array1,array2){
+var result=await arrpush(array1,array2);
+return result;
+
+}
+
+
 
 
 module.exports={
