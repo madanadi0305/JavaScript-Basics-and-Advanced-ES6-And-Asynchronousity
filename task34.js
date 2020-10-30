@@ -6,15 +6,15 @@ var sum=0;
 yield a;
 yield b;
 
-while(true){
+while(sum<=60){
 c=a+b;
 sum=c;
 a=b;
 b=c;
 yield sum;
-if(sum>=50 && sum<=60){
+/*if(sum>=50 && sum<=60){
     break;
-}
+}*/
 }
 
 
