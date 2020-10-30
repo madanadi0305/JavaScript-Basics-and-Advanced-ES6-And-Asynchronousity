@@ -1,8 +1,8 @@
-function elementpush(arr1,arr2){
+function elementpush(array1,array2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
-if(ar2.length>1){
-    res(ar2.push(ar1));
+if(array2.length>1){
+    res(array2.push(array1));
 }
 else{
     rej("Error!");
@@ -17,8 +17,8 @@ else{
 
 }
 
-async function arrpush(array1,array2){
-var result=await arrpush(array1,array2);
+async function arrpush(ar1,ar2){
+var result=await arrpush(ar1,ar2);
 return result;
 
 }
