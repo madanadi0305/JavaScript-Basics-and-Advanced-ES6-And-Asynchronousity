@@ -8,7 +8,7 @@ for(var i=1;i<=n;i++){
 
 }
 
-for(var odd of generateOddSeries(25)){
+for(var odd of generateOddSeries(50)){
     console.log(odd);
 }
 
