@@ -1,4 +1,4 @@
-function filterFn(array){
+function * filterFn(array){
 var i=0;
 while(i<array.length){
     if(array[i]%2===0){
