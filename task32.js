@@ -1,6 +1,6 @@
 function * evenNumberFn(){
 var i=0;
-while(true){
+while(i<=50){
     if(i%2===0){
         yield i;
     }
