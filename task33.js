@@ -1,23 +1,17 @@
-function * generateOddSeries(number){
-var n=parseInt(number);
-for(var i=1;i<n;i++){
-    if(i%2!==0){
-        yield i;
+function * generateOddSeries(){
+    var n=50;
+    var i=0;
+    while(i<=n){
+        if(i%2!==0){
+            yield i;
+        }
+        i=i+1;
     }
 }
 
-}
-
-for(var odd of generateOddSeries(50)){
+for(var odd of generateOddSeries()){
     console.log(odd);
 }
-
-/*for(var odd of generateOddSeries(50)){
-    console.log(odd);
-}*/
-
-
-
 
 module.exports={
 oddNumberFn:generateOddSeries
