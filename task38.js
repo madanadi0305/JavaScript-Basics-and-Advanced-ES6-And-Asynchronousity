@@ -25,6 +25,7 @@ var i=0;
 while(i<fib_array.length){
     if((fib_array[i])%2===0){
         fib_array[i]=0;
+        yield fib_array;
     }
     i=i+1;
 }
