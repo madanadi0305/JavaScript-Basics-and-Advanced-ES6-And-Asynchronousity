@@ -31,7 +31,7 @@ while(i<fib_array.length){
 }
 
 function * function3(){
-var fib_result_array=generator1(number);
+var fib_result_array=generator1(60);
 var filtered_fib_array=generator2(fib_result_array);
 yield filtered_fib_array;
 }
