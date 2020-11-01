@@ -17,6 +17,8 @@ else{
 
 }
 
+var ar1=[1,2,3,4];
+var ar2=[0];
 async function arrpush(ar1,ar2){
 var result=await arrpush(ar1,ar2);
 return result;
