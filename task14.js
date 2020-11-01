@@ -4,9 +4,10 @@ var ar2=[0];
 async function arrpush(arr1,arr2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
+(arr2.push(arr1));
+
 if(arr2.length>1){
-    (arr2.push(arr1));
-    res(arr2);
+        res(arr2);
 }
 else{
     rej("Error!");
