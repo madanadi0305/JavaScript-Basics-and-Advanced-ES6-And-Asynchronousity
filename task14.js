@@ -20,7 +20,7 @@ else{
 
 }
 
-arrpush(ar1,ar2).then(res=>{console.log(res);});
+arrpush(ar1,ar2).then(res=>{console.log(res);}).catch(err=>{console.log(err.message)});
 /*async function arrpush(ar1,ar2){
 var result=await arrpush(ar1,ar2);
 return result;
