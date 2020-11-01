@@ -1,7 +1,7 @@
 
 var ar1=[1,2,3,4];
 var ar2=[0];
-function arrpush(ar1,ar2){
+async function arrpush(ar1,ar2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
 if(ar2.length>1){
