@@ -1,12 +1,12 @@
 
 var ar1=[1,2,3,4];
 var ar2=[0];
-async function arrpush(ar1,ar2){
+async function arrpush(arr1,arr2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
-if(ar2.length>1){
-    (ar2.push(ar1));
-    res(ar2);
+if(arr2.length>1){
+    (arr2.push(arr1));
+    res(arr2);
 }
 else{
     rej("Error!");
@@ -21,7 +21,7 @@ else{
 
 }
 
-//arrpush(ar1,ar2).then(res=>{console.log(res);}).catch(res=>{console.log(res)});
+arrpush(ar1,ar2).then(res=>{console.log(res);}).catch(res=>{console.log(res)});
 /*async function arrpush(ar1,ar2){
 var result=await arrpush(ar1,ar2);
 return result;
