@@ -1,12 +1,12 @@
 
 var ar1=[1,2,3,4];
 var ar2=[0];
-function arrpush(array1,array2){
+function arrpush(ar1,ar2){
 return new Promise((res,rej)=>{
 setTimeout(()=>{
-if(array2.length>1){
-    (array2.push(array1));
-    res(array2);
+if(ar2.length>1){
+    (ar2.push(ar1));
+    res(ar2);
 }
 else{
     rej("Error!");
