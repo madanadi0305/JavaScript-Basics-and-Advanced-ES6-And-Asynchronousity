@@ -5,28 +5,29 @@ var sum=0;
 var c;
 var fib_array=[];
 var n=parseInt(number);
-yield a;
 //fib_array.push(a);
-yield b;
-//fib_array.push(b);
+fib_array.push(a);
+//yield b;
+fib_array.push(b);
 while(sum<n){
 c=a+b;
 sum=c;
-yield sum;
+fib_array.push(sum);
 a=b;
 b=c;
 }
-//return fib_array;
+yield fib_array;
 }
 
 
 function * generator2(fib_array){
 var i=0;
 while(i<fib_array.length){
-    if((fib_array[i])%2===0){
+    if((i)%2===0){
         fib_array[i]=0;
-        yield fib_array;
+        //yield fib_array;
     }
+    yield fib_array;
     i=i+1;
 }
 }
