@@ -20,7 +20,7 @@ yield fib_array;
 }
 
 
-function * generator2(fib1_array){
+function * generator2(fib_array){
 var i=0;
 while(i<fib_array.length){
     if((fib_array[i])%2===0){
