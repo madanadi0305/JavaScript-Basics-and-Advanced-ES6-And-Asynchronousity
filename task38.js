@@ -20,7 +20,7 @@ yield fib_array;
 }
 
 
-function * generator2(fib_array){
+function * generator2(fib1_array){
 var i=0;
 while(i<fib_array.length){
     if((fib_array[i])%2===0){
@@ -33,8 +33,15 @@ while(i<fib_array.length){
 }
 
 function * function3(){
-var fib_result_array=generator1(60);
-var filtered_fib_array=generator2(fib_result_array);
+ var fib_result_array=[];   
+ 
+for(var element of generator1(parseInt(number))){
+fib_result_array.push(element);
+}
+var filtered_fib_array=[];
+for(var el of generator2(fib_result_array)){
+    filtered_fib_array.push(el);
+}
 yield filtered_fib_array;
 }
 
