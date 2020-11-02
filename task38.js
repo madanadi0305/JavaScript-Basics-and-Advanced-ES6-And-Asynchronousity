@@ -20,16 +20,17 @@ yield fib_array;
 }
 
 
-function * generator2(fib_array){
+function * generator2(fib1_array){
 var i=0;
-while(i<fib_array.length){
-    if((fib_array[i])%2===0){
-        fib_array[i]=0;
+while(i<fib1_array.length){
+    if((fib1_array[i])%2===0){
+        fib1_array[i]=0;
         //yield fib_array;
     }
-    yield fib_array;
+    
     i=i+1;
 }
+yield fib1_array;
 }
 
 function * function3(){
@@ -38,12 +39,33 @@ function * function3(){
 for(var element of generator1(parseInt(number))){
 fib_result_array.push(element);
 }
+var fib1_array=fib_result_array.join("").split(",");
+var fib2_array=[];
+//fib1_array.split(",");
+//console.log(fib1_array);
+//var filtered_fib_array=fib_result_array;
+for(var i=0;i<fib1_array.length;i++){
+  fib2_array.push(parseInt(fib1_array[i]));
+}
+//console.log(fib2_array);
 var filtered_fib_array=[];
-for(var el of generator2(fib_result_array)){
+for(var el of generator2(fib2_array)){
     filtered_fib_array.push(el);
 }
-yield filtered_fib_array;
+var filtered1_fib_array=filtered_fib_array.join("").split(",");
+console.log(filtered1_fib_array);
+//yield filtered_fib_array;
+var filtered_result1_array=[];
+for(var i=0;i<filtered1_fib_array.length;i++){
+  filtered_result1_array.push(parseInt(filtered1_fib_array[i]));
 }
+yield filtered_result1_array;
+}
+
+for(var el1 of function3()){
+  console.log(el1);
+}
+
 
 
 module.exports = {
