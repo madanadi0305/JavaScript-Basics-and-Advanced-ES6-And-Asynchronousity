@@ -34,7 +34,7 @@ while(i<fib_array.length){
 
 function * function3(){
  var fib_result_array=[];   
- 
+ var number=60;
 for(var element of generator1(parseInt(number))){
 fib_result_array.push(element);
 }
